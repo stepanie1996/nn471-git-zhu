@@ -33,6 +33,7 @@ import TocDrawer from './components/TocDrawer'
 import TocDrawerButton from './components/TocDrawerButton'
 import CONFIG from './config'
 import { Style } from './style'
+import { AdSlot } from '@/components/GoogleAdsense'
 
 const AlgoliaSearchModal = dynamic(
   () => import('@/components/AlgoliaSearchModal'),
@@ -139,7 +140,7 @@ const LayoutBase = props => {
                 {children}
               </Transition>
             </div>
-
+            
             {/* 右侧栏 */}
             <SideRight {...props} />
           </div>
